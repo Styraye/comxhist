@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8" />
+<title>Grim Ghost</title>
+/*  */
+
+<style>
+body{
+  background:#c0c0c0; /* Меняется фон экрана, выбирается здесь */
+}
+
+#wrapper{ /* Оболочка страницы сайта */
+  width: 900px; /* Меняется ширина страницы */
+  margin: 0 auto;
+  background:#f2e8c9; /* Меняется задний фон страницы */
+}
+
+/* Шапка сайта */
+
+#header{
+position:relative; /* Задаём блоку относительное позиционирование для того, чтобы затем размещать, в нём другие элементы и позиционировать относительно его границ поверх фоновой картинки и заголовка */
+  height: 150px; /* Высота шапки */
+  background-color: #ffffff; /* Фон шапки */
+   margin-bottom: 5px; /* Нижний отступ шапки от остального контента */
+  border-radius: 5px; /* Закругляются углы блока */
+  box-shadow: rgba(0,0,0,0.5) 0px 1px 3px; /* Тень. Визуально приподнимает блок над оболочкой */
+}
+img{ /* Фоновая картинка в шапке */
+float: left; /* Разрешаем наплывание других элементов на картинку */
+  margin: -40px 0 0 0;} /* Размещаем картинку в блоке header. 1-я и 3-я цифры - двигаем вверх-вниз, 2-я и 4-я цифры - двигаем вправо-влево */
+h1{ /* Заголовок сайта */
+  margin:0 0 10px 40px; /* Заголовок двигается верх-вправо-вниз-влево. */
+  color:#464451; /* Цвет заголовка */
+}
+.nomer{ /*Подзаголовок (номер телефона)*/
+  position:absolute; /* Позиционируем абсолютно подзаголовок, относительно границ блока header. Также можно разместить в шапке сайта ещё другие картинки и абзацы поверх фоновой картинки и заголовка */
+  top:5px; /* Двигается вверх-вниз */
+  left:680px; /* Двигается вправо-влево */
+  font-size: 25px; /* Размер букв подзаголовка */
+  font-style:italic; /* Курсив */
+  font-weight:bold; /* Жирный */
+  color:#464451; /* Цвет букв подзаголовка */
+}
+
+/* Сайдбар (колонка справа) */
+
+#sidebar{ /* Блок сайдбара */
+  background-color: #ffffff; /* Фон блока */
+  width: 180px; /* Ширина блока */
+  padding: 10px; /* Отступ текста от краёв */
+  float: right; /* Размещаем блок справа от других элементов, наплывание или обтекание справа). Если делать сайдбар слева, то значение right меняем на left */
+  border-radius: 5px; /* Закругляем углы блока */
+  box-shadow: rgba(0,0,0,0.5) 0px 1px 3px; /* Задаём блоку тень */
+}
+.marcer{ /* Галочки маркеры меню */
+  float: left; /* Размещаем слева от текста */
+  margin: 5px 5px 0 0; /* Двигаются вверх-вправо-вниз-влево */
+}
+
+/* Контент (статья) */
+
+#content{ /* Блок контента */
+  margin-bottom: 5px; /* Отступ блока статьи от блока подвала */
+  width: 676px; /* Ширина статьи */
+  padding: 10px; /* Отступ текста от краёв блока */
+  background: #ffffff; /* Фон статьи */
+  border-radius: 5px;
+  box-shadow: rgba(0,0,0,0.5) 0px 1px 3px;
+}
+.left{ /* Картинка в тексте слева */
+  float: left;
+  margin: 30px 7px 7px 7px;
+}
+.right{ /* Картинка в тексте справа */
+  float: right;
+  margin: 7px 0 7px 7px;
+}
+/* Подвал */
+
+#footer{ /* Блок подвала */
+  height:80px; /* Высота блока подвала */
+  background-color: #ffffff; /* Фон блока подвала */
+  margin-bottom: 10px; /* Отступ снизу */
+  border-radius: 5px; /* Закруглённые углы */
+  box-shadow: rgba(0,0,0,0.5) 0px 1px 3px; /* Тень блока */
+}
+.clear{ /* Запрет наплывания. Устанавливается для того, чтобы блок контента, при заполнении текстом и изображениями не наплывал на подвал */
+  clear: both;
+}
+  .fon{ /* Номер телефона */
+  float:left; /* Разрешаем другим элементам обтекать абзац справа */
+  margin:20px 0 0 20px;
+}
+.fax{ /* Номер факса */
+  float:left;
+  margin:20px 0 0 60px;
+}
+.mail{ /* Адрес E-mail */
+  float:left;
+ margin:20px 0 0 60px;
+}
+</style>
+</head>
+<body>
+  <div id="wrapper"> <!--Оболочка страницы-->
+<!--Шапка сайта-->
+    <div id="header">
+<!--Заголовок сайта-->
+      <h1>Grim Ghost</h1>
+<!--Описание (телефон)-->
+        <p class="nomer" <br> Publication history <br> </p>
+<!--Фоновая картинка в шапке сайта-->
+      <img src="">
+    </div>
+<!--Сайдбар-->
+    <div id="sidebar">
+<!--меню-->
+      <h3>Atlas/Seaboard Comics</h3>
+<!--Картинки маркеров меню (галочки)-->
+        <p><img class="marcer" src="" width="10" height="10"></p>
+        <p><img class="marcer" src="" width="10" height="10"></p>
+        <p><img class="marcer" src="" width="10" height="10"></p>
+<!--Прямая синяя линия-->
+          <hr width="50" color="#037FFC" size="5">
+<!--Общая информация в сайдбаре-->
+      <h3></h3>
+    </div>
+<!--Основной контент (статья)-->
+    <div id="content">
+<!--Картинка слева-->
+      <img class="left" src="">
+<!--Заголовок статьи-->
+        <h3>Ardden Entertainment</h3>
+<!--Текст статьи-->
+<p>The Grim Ghost is a fictional character, a superhero created by writer Michael Fleisher
+ and artist Ernie Colon that debuted in The Grim Ghost #1 (Jan. 1975) from Atlas Seaboard Comics.
+ The series lasted three issues before the company went out of business in January 1976. A new ongoing series
+ published by a revival of Atlas Comics in association with Ardden Entertainment, debuted in 2010</p>
+<p>Atlas/Seaboard Comics' The Grim Ghost ran three issues (cover-dated Jan.-July 1975. Writer co-creator
+ Michael Fleisher scripted the first two issues, and Tony Isabella the third. Artist co-creator Ernie Colon drew all three.
+[1] A new ongoing series, published by a revival of Atlas Comics in association with Ardden Entertainment, debuted with a #0 preview (Oct. 2010) before issue #1 (March 2011).
+ The new series' trademarked cover logo is The Grim Ghost while its copyrighted title given in the postal indicia is simply Grim Ghost</p>
+<p>Fictional character biography</p>
+<p>In Colonial America, Irish immigrant silversmith Matthew Dunsinane was secretly the masked highwayman known as
+ the Grim Ghost and was quite successful at his criminal trade until the dashing rogue was finally betrayed by a 
+woman and captured in 1743. After he was hanged, his soul went to Hell where Satan gave him a choice: either suffer 
+for his crimes forever or become an agent of Satan's on Earth to bring evil souls to Hell. Returning to Earth in the 20th century 
+(where longer lifespans were keeping the wicked from going to Hell long past when they were due), he became the Grim Ghost in form
+ as well as name, now riding a flying black horse and firing spectral pistols whose "bullets" transported still-living murderers and
+ thieves down to the flames of Perdition while posing as a living descendant of himself who resided in the house he had owned over two 
+centuries before. His greatest mission was to capture the demon Brimstone who wanted to overthrow Satan and rule Hell in his place.
+ In order to do this, Satan forced Matthew to work with Lady Sarah Braddock, the woman who originally set him up to get caught and hanged.</p>
+<!--Картинка справа-->
+      <img class="right" src="">
+
+<p>REKLAMA.</p>
+    </div>
+<!--Запрет наплывания-->
+  <div class="clear"></div>
+<!--Подвал-->
+    <div id="footer">
+      <p class="fon"><strong>:<br> </strong> </p>
+      <p class="fax"><strong>:<br> </strong></p>
+      <p class="mail"><strong><br></strong></p>
+
+    </div>
+  </div>
+</body>
+</html>
+
+<style>
+body {
+background: rgb(87, 55, 138)
